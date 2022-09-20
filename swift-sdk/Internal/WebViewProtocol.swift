@@ -44,7 +44,7 @@ extension WKWebView: WebViewProtocol {
     }
     
     func calculateHeight() -> Future<CGFloat, IterableError> {
-        return Promise.init<CGFloat, IterableError>(value: 150)
+        Promise(value: 150)
         // FIXME: Working around the JS not being able to find the webview height
 //        let promise = Promise<CGFloat, IterableError>()
 //
